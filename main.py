@@ -37,13 +37,13 @@ class Game:
         pos_tabuleiro = (self.tabuleiro_x, self.tabuleiro_y)
         self.board.draw(self.screen, pos_tabuleiro)
         x_pos_instr = 20
-        y_pos_instr = 10
+        y_pos_instr = 15
         instrucoes = [
             "CAÇA AO TESOURO:",
             "  - Tesouro (100pts), buraco (-50pts, nunca fica negativo).",
             "  - Números são a dica de quantos tesouros estão ao redor.",
             "  - Botão direito para colocar/remover bandeira.",
-            "  - Ao clicar em todos os quadrados, clique novamente para reiniciar o jogo"
+            "  - Ao revelar todos os quadrados, clique em qualquer quadrado para reiniciar o jogo"
         ]
 
         for linha in instrucoes:
