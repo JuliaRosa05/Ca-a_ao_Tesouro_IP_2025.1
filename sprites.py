@@ -23,7 +23,8 @@ class Tile:
 
 class Board:
     def __init__(self):
-        self.board_surface = pygame.Surface((LARGURA, ALTURA_TABULEIRO))
+        self.board_surface = pygame.Surface((LARGURA_TABULEIRO, ALTURA_TABULEIRO)) 
+
         self.board_list = [
             [Tile(col, row, tile_empty, ".") for col in range(COLUNAS)]for row in range(LINHAS)
             ]
@@ -99,14 +100,12 @@ class Board:
         if cell_type =="B":
             self.board_list[y][x].image = tile_exploded
             return cell_type
+        
         elif cell_type == "T":
             return cell_type
+        
         elif cell_type == "C":
             return cell_type
-        for vizinho_y in range(max(0, y - 1), min(LINHAS, y + 2)):
-            for vizinho_x in range(max(0, x - 1), min(COLUNAS, x + 2)):
-                if (vizinho_y, vizinho_x) != (y, x) and (vizinho_y, vizinho_x) not in self.cavado:
-                    self.cava(vizinho_y, vizinho_x)
         return cell_type
 
 
