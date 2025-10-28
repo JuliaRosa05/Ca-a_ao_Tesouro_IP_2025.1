@@ -29,7 +29,7 @@ ALTURA_TABULEIRO = TAMANHO_QUADRADO * LINHAS
 LARGURA = LARGURA_JANELA
 ALTURA = ALTURA_JANELA
 FPS = 60
-TITULO = "Caça ao tesouro-CDIA 2025.1 - Ciro, Julia Rosa e Liliana"
+TITULO = "Caça ao tesouro-CDIA 2025.1 - Julia Rosa"
 
 tile_numbers = []
 for i in range(1,9):

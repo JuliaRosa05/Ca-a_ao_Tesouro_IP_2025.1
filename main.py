@@ -10,7 +10,7 @@ class Game:
         self.clock = pygame.time.Clock()
 
         self.pontuacoes = {1: 0, 2: 0}
-        self.vez_jogador = 1
+        self.vez_jogador = 1        
         self.vitoria = False
         self.font = pygame.font.SysFont("arial", 20)
         self.tabuleiro_x = (LARGURA - LARGURA_TABULEIRO) // 2
